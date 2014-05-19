@@ -1,0 +1,17 @@
+Source: gifsplit
+Section: graphics
+Priority: optional
+Maintainer: Hector Martin <marcan@pixiv.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/marcan/gifsplit
+#Vcs-Git: git://git.debian.org/collab-maint/gifsplit.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/gifsplit.git;a=summary
+
+Package: gifsplit
+Architecture: any
+Depends: libpng12-0, libgif4
+Description: Split animated GIF files into PNG frames
+ gifsplit is an animated GIF splitter that is designed not to load the entire
+ animation into memory, but instead progressively reads its input and writes
+ output frames one by one.
